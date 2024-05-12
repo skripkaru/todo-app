@@ -5,7 +5,7 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
-import { Typography, Layout, Button, List, Input, Checkbox, Select, Form } from 'ant-design-vue';
+import { Typography, Layout, Card, Button, List, Input, Checkbox, Select, Form } from 'ant-design-vue';
 
 const app = createApp(App)
 
@@ -14,6 +14,7 @@ app.use(router)
 
 app.use(Typography);
 app.use(Layout);
+app.use(Card);
 app.use(Button);
 app.use(List);
 app.use(Input);

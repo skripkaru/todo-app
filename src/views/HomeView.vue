@@ -17,34 +17,31 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="wrapper">
-    <ATypographyTitle class="title">Todo App</ATypographyTitle>
-    <div class="grid">
+  <ACard class="wrapper">
+    <div class="inner">
+      <ATypographyTitle class="title">Todo App</ATypographyTitle>
       <TodoForm />
-      <TodoFilter/>
+      <TodoFilter />
       <TodoList :todos="filteredTodos" />
-      <TodoInfo/>
+      <TodoInfo />
     </div>
-  </div>
+  </ACard>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 .wrapper {
   width: 100%;
-  max-width: 500px;
-  padding: 16px;
+  max-width: 400px;
   margin: 16px auto;
-  border-radius: 20px;
-  background-color: #fff;
 }
 
-.grid {
+.inner {
   display: grid;
   gap: 16px;
 }
 
 .title {
-  margin-top: 0;
+  margin: 0;
   text-align: center;
 }
 </style>
