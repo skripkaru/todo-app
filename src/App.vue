@@ -1,19 +1,18 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import type { CSSProperties } from 'vue'
-
-const contentStyle: CSSProperties = {
-  minHeight: '100vh',
-  backgroundColor: '#fff',
-};
 </script>
 
 <template>
   <ALayout>
-    <ALayoutContent :style="contentStyle">
+    <ALayoutContent class="content">
       <RouterView />
     </ALayoutContent>
   </ALayout>
 </template>
 
-<style scoped></style>
+<style scoped>
+.content {
+  height: 100dvh;
+  padding: 16px;
+}
+</style>

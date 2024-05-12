@@ -32,8 +32,10 @@ onMounted(() => {
 .wrapper {
   width: 100%;
   max-width: 500px;
-  padding: 0 16px;
-  margin: 40px auto;
+  padding: 16px;
+  margin: 16px auto;
+  border-radius: 20px;
+  background-color: #fff;
 }
 
 .grid {
